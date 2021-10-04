@@ -37,7 +37,7 @@ require: 'source-map-support/register'
 retries: 1
 slow: 75
 sort: false
-#spec: 'test/**/*.spec.js' # the positional arguments!
+spec: 'test/**/*.js' # the positional arguments!
 timeout: false # same as "no-timeout: true" or "timeout: 0"
 trace-warnings: true # node flags ok
 ui: 'bdd'
