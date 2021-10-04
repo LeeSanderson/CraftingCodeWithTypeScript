@@ -1,0 +1,53 @@
+{
+  "name": "testdeck-mocha-seed",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A seed for @testdeck/mocha",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "tsc",
+    "test": "nyc mocha",
+    "watch": "testdeck-watch",
+    "prepare": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/testdeck/testdeck-mocha-seed.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/testdeck/testdeck-mocha-seed/issues"
+  },
+  "homepage": "https://www.testdeck.org/",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "latest",
+    "@types/mocha": "latest",
+    "@testdeck/mocha": "latest",
+    "chai": "latest",
+    "mocha": "latest",
+    "nyc": "latest",
+    "source-map-support": "latest",
+    "tslint": "latest",
+    "typescript": "latest"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "lines": 80,
+    "statements": 80,
+    "functions": 80,
+    "branches": 80,
+    "include": [
+      "src/**/*.js"
+    ],
+    "exclude": [
+      "test/**/*.js"
+    ],
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ],
+    "all": true
+  }
+}
