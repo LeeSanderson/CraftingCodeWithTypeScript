@@ -20,11 +20,11 @@
     "url": "https://github.com/testdeck/testdeck-mocha-seed/issues"
   },
   "homepage": "https://www.testdeck.org/",
-  "dependencies": {},
   "devDependencies": {
+    "@fluffy-spoon/substitute": "^1.208.0",
+    "@testdeck/mocha": "latest",
     "@types/chai": "latest",
     "@types/mocha": "latest",
-    "@testdeck/mocha": "latest",
     "chai": "latest",
     "mocha": "latest",
     "nyc": "latest",

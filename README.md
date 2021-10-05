@@ -61,3 +61,29 @@ Examples:
 - 1800 is NOT a leap year (divisible by 4, divisible by 100, NOT divisible by 400)
 
 After this exercise watch this [video on Explanatory Methods](https://www.youtube.com/watch?v=sKYX40ltQZM) and review your solution.
+
+## Exercise 04 - Mocking
+ 		 
+Problem description:  Payment service
+ 		 
+Given a user wants to buy her selected items
+When she submits her payment details
+Then we should process her payment
+
+Acceptance criteria:
+- If the user does not exist, an exception should be thrown (validated by a ```UserValidator``` interface) and payment should be sent to the payment gateway.
+
+Create a class with the following signature:
+
+```
+public class PaymentService {
+    constructor(
+        private userValidator: UserValidator,
+        private paymentGateway: PaymentGateway) {            
+        }
+
+    public processPayment(user: User, paymentDetails: PaymentDetails) {
+		// your code goes here
+	}
+}
+```
